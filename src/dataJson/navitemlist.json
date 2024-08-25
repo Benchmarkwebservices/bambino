@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Home",
+        "link": "/",
+        "key": "home"
+    },
+    {
+        "title": "About",
+        "link": "/about",
+        "key": "about"
+    },
+    {
+        "title": "Menu",
+        "link": "/menu",
+        "key": "menu"
+    },
+    {
+        "title": "Chef",
+        "link": "/chef",
+        "key": "chef"
+    },
+    {
+        "title": "Blog",
+        "link": "/blog",
+        "key": "blog"
+    },
+    {
+        "title": "Contact",
+        "link": "/contact",
+        "key": "contact"
+    }
+]
