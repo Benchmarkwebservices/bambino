@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bambino's Kebabs</title>
+</head>
+
+<body>
+  <style>
+    #particles-js {position: fixed;width: 100%;height: 100%;z-index: 0;}
+    /* Scroll */
+    /* Scrollbar styles for WebKit (Chrome, Safari) */
+    *::-webkit-scrollbar {width: 5px;height: 5px;}
+    *::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 6px rgb(5, 5, 5);-webkit-border-radius: 10px;border-radius: 10px;}
+    *::-webkit-scrollbar-thumb {-webkit-border-radius: 10px;border-radius: 10px;background: rgb(255, 255, 255);-webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255);}
+    *::-webkit-scrollbar-thumb:window-inactive {background: rgba(255, 255, 255);}
+    /* Scrollbar styles for Firefox */
+    @-moz-document url-prefix() {* {scrollbar-width: thin;scrollbar-color:  rgba(5, 5, 5) rgba(255, 255, 255);}}
+    /* Scrollbar styles for Microsoft Edge and IE */
+    @supports (-ms-ime-align: auto) {* {scrollbar-width: thin;scrollbar-color: rgba(255, 255, 255) rgba(5, 5, 5);}}
+    /* Scroll */
+  </style>
+  
+  <div id="particles-js"></div>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<script>
+    particlesJS('particles-js', {
+        "particles": {
+            "number": {
+                "value": 100,
+                "density": {
+                    "enable": true,
+                    "value_area": 800
+                }
+            },
+            "color": {
+                "value": ["#FF4500", "#FFA500", "#FFD700"]  /* Ember colors: orange, gold, yellow */
+            },
+            "shape": {
+                "type": "circle",
+                "stroke": {
+                    "width": 0,
+                    "color": "#000000"
+                }
+            },
+            "opacity": {
+                "value": 0.8,
+                "random": true,
+                "anim": {
+                    "enable": true,
+                    "speed": 1.5,
+                    "opacity_min": 0.3,
+                    "sync": false
+                }
+            },
+            "size": {
+                "value": 3,
+                "random": true,
+                "anim": {
+                    "enable": true,
+                    "speed": 2,
+                    "size_min": 0.5,
+                    "sync": false
+                }
+            },
+            "line_linked": {
+                "enable": false
+            },
+            "move": {
+                "enable": true,
+                "speed": 2,
+                "direction": "top-right",  /* Embers rising effect */
+                "random": false,
+                "straight": false,
+                "out_mode": "out",
+                "attract": {
+                    "enable": false,
+                    "rotateX": 600,
+                    "rotateY": 1200
+                }
+            }
+        },
+        "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+                "onhover": {
+                    "enable": true,
+                    "mode": "repulse"  /* Embers scatter on hover */
+                },
+                "onclick": {
+                    "enable": true,
+                    "mode": "push"
+                },
+                "resize": true
+            },
+            "modes": {
+                "repulse": {
+                    "distance": 100,
+                    "duration": 0.4
+                },
+                "push": {
+                    "particles_nb": 4
+                }
+            }
+        },
+        "retina_detect": true
+    });
+</script>
+</body>
+
+</html>
